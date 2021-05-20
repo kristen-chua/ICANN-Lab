@@ -60,3 +60,16 @@ g=nx.graph #initialize a graph container
 #Instead you can use from_pandas_edgelist.
 g = nx.from_pandas_edgelist(data,source='Name',target='Type 1')
 print(nx.info(g))
+
+plt.figure(figsize=(20,20))
+#pos = nx.spring_laylout(g, k=0.15) 
+pos = nx.spring_laylout(g, k=0.15) 
+
+#gets eror message: module 'networkx' has no attribute 'spring_laylout'
+#https://stackoverflow.com/questions/39411102/attributeerror-module-object-has-no-attribute-graphviz-layout-with-networkx
+
+#Position nodes using Fruchterman-Reingold force-directed algorithm.
+#The algorithm simulates a force-directed representation of the network treating edges as springs holding nodes close, while treating nodes as repelling objects, sometimes called an anti-gravity force. Simulation continues until the positions are close to an equilibrium.
+#k (float (default=None)) – Optimal distance between nodes.
+nx.draw_networkx(g,pos,node_size=25,node_color='blue')
+plt.show()

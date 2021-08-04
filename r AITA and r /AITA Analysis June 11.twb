@@ -1,0 +1,1027 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20211.21.0511.0935                               -->
+<workbook original-version='18.1' source-build='2021.1.2 (20211.21.0511.0935)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='advice_subreddits_combined_feat (advice_subreddits_combined_features_demographics)' inline='true' name='federated.1a9t09f097qtpd1h3jmwf18ltemw' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='advice_subreddits_combined_features_demographics' name='excel-direct.0t5kfli1nnmhc91grjwfg1eswozs'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/kcchua/Downloads/advice_subreddits_combined_features_demographics.xls' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0t5kfli1nnmhc91grjwfg1eswozs' name='advice_subreddits_combined_feat' table='[advice_subreddits_combined_feat$]' type='table'>
+          <columns gridOrigin='A1:Y1967:no:A1:Y1967:0' header='yes' outcome='2'>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='created_utc' ordinal='1' />
+            <column datatype='integer' name='gilded' ordinal='2' />
+            <column datatype='string' name='id' ordinal='3' />
+            <column datatype='string' name='kind' ordinal='4' />
+            <column datatype='string' name='link_flair_css_class' ordinal='5' />
+            <column datatype='integer' name='num_comments' ordinal='6' />
+            <column datatype='integer' name='score' ordinal='7' />
+            <column datatype='string' name='selftext' ordinal='8' />
+            <column datatype='string' name='subreddit' ordinal='9' />
+            <column datatype='string' name='title' ordinal='10' />
+            <column datatype='real' name='upvote_ratio' ordinal='11' />
+            <column datatype='string' name='text' ordinal='12' />
+            <column datatype='integer' name='afinn_score' ordinal='13' />
+            <column datatype='integer' name='word_count' ordinal='14' />
+            <column datatype='real' name='afinn_adjusted' ordinal='15' />
+            <column datatype='real' name='vader_compound' ordinal='16' />
+            <column datatype='real' name='vader_neg' ordinal='17' />
+            <column datatype='real' name='vader_pos' ordinal='18' />
+            <column datatype='integer' name='masc_words' ordinal='19' />
+            <column datatype='integer' name='fem_words' ordinal='20' />
+            <column datatype='real' name='cosine_similarity' ordinal='21' />
+            <column datatype='string' name='OP_demographics' ordinal='22' />
+            <column datatype='string' name='OP_age' ordinal='23' />
+            <column datatype='string' name='OP_gender' ordinal='24' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0t5kfli1nnmhc91grjwfg1eswozs' name='advice_subreddits_combined_feat' table='[advice_subreddits_combined_feat$]' type='table'>
+          <columns gridOrigin='A1:Y1967:no:A1:Y1967:0' header='yes' outcome='2'>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='created_utc' ordinal='1' />
+            <column datatype='integer' name='gilded' ordinal='2' />
+            <column datatype='string' name='id' ordinal='3' />
+            <column datatype='string' name='kind' ordinal='4' />
+            <column datatype='string' name='link_flair_css_class' ordinal='5' />
+            <column datatype='integer' name='num_comments' ordinal='6' />
+            <column datatype='integer' name='score' ordinal='7' />
+            <column datatype='string' name='selftext' ordinal='8' />
+            <column datatype='string' name='subreddit' ordinal='9' />
+            <column datatype='string' name='title' ordinal='10' />
+            <column datatype='real' name='upvote_ratio' ordinal='11' />
+            <column datatype='string' name='text' ordinal='12' />
+            <column datatype='integer' name='afinn_score' ordinal='13' />
+            <column datatype='integer' name='word_count' ordinal='14' />
+            <column datatype='real' name='afinn_adjusted' ordinal='15' />
+            <column datatype='real' name='vader_compound' ordinal='16' />
+            <column datatype='real' name='vader_neg' ordinal='17' />
+            <column datatype='real' name='vader_pos' ordinal='18' />
+            <column datatype='integer' name='masc_words' ordinal='19' />
+            <column datatype='integer' name='fem_words' ordinal='20' />
+            <column datatype='real' name='cosine_similarity' ordinal='21' />
+            <column datatype='string' name='OP_demographics' ordinal='22' />
+            <column datatype='string' name='OP_age' ordinal='23' />
+            <column datatype='string' name='OP_gender' ordinal='24' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[advice_subreddits_combined_feat]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:Y1967:no:A1:Y1967:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[advice_subreddits_combined_feat]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[advice!subreddits!combined!feat_963DF2946FA04A159C62622FB21948C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>created_utc</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[created_utc]</local-name>
+            <parent-name>[advice_subreddits_combined_feat]</parent-name>
+            <remote-alias>created_utc</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[advice!subreddits!combined!feat_963DF2946FA04A159C62622FB21948C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gilded</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[gilded]</local-name>
+            <parent-name>[advice_subreddits_combined_feat]</parent-name>
+            <remote-alias>gilded</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[advice!subreddits!combined!feat_963DF2946FA04A159C62622FB21948C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[advice_subreddits_combined_feat]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[advice!subreddits!combined!feat_963DF2946FA04A159C62622FB21948C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>kind</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[kind]</local-name>
+            <parent-name>[advice_subreddits_combined_feat]</parent-name>
+            <remote-alias>kind</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[advice!subreddits!combined!feat_963DF2946FA04A159C62622FB21948C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>link_flair_css_class</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[link_flair_css_class]</local-name>
+            <parent-name>[advice_subreddits_combined_feat]</parent-name>
+            <remote-alias>link_flair_css_class</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[advice!subreddits!combined!feat_963DF2946FA04A159C62622FB21948C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_comments</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_comments]</local-name>
+            <parent-name>[advice_subreddits_combined_feat]</parent-name>
+            <remote-alias>num_comments</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[advice!subreddits!combined!feat_963DF2946FA04A159C62622FB21948C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[score]</local-name>
+            <parent-name>[advice_subreddits_combined_feat]</parent-name>
+            <remote-alias>score</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[advice!subreddits!combined!feat_963DF2946FA04A159C62622FB21948C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>selftext</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[selftext]</local-name>
+            <parent-name>[advice_subreddits_combined_feat]</parent-name>
+            <remote-alias>selftext</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[advice!subreddits!combined!feat_963DF2946FA04A159C62622FB21948C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>subreddit</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[subreddit]</local-name>
+            <parent-name>[advice_subreddits_combined_feat]</parent-name>
+            <remote-alias>subreddit</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[advice!subreddits!combined!feat_963DF2946FA04A159C62622FB21948C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[advice_subreddits_combined_feat]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[advice!subreddits!combined!feat_963DF2946FA04A159C62622FB21948C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>upvote_ratio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[upvote_ratio]</local-name>
+            <parent-name>[advice_subreddits_combined_feat]</parent-name>
+            <remote-alias>upvote_ratio</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[advice!subreddits!combined!feat_963DF2946FA04A159C62622FB21948C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>text</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[text]</local-name>
+            <parent-name>[advice_subreddits_combined_feat]</parent-name>
+            <remote-alias>text</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[advice!subreddits!combined!feat_963DF2946FA04A159C62622FB21948C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>afinn_score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[afinn_score]</local-name>
+            <parent-name>[advice_subreddits_combined_feat]</parent-name>
+            <remote-alias>afinn_score</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[advice!subreddits!combined!feat_963DF2946FA04A159C62622FB21948C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>word_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[word_count]</local-name>
+            <parent-name>[advice_subreddits_combined_feat]</parent-name>
+            <remote-alias>word_count</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[advice!subreddits!combined!feat_963DF2946FA04A159C62622FB21948C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>afinn_adjusted</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[afinn_adjusted]</local-name>
+            <parent-name>[advice_subreddits_combined_feat]</parent-name>
+            <remote-alias>afinn_adjusted</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[advice!subreddits!combined!feat_963DF2946FA04A159C62622FB21948C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vader_compound</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[vader_compound]</local-name>
+            <parent-name>[advice_subreddits_combined_feat]</parent-name>
+            <remote-alias>vader_compound</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[advice!subreddits!combined!feat_963DF2946FA04A159C62622FB21948C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vader_neg</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[vader_neg]</local-name>
+            <parent-name>[advice_subreddits_combined_feat]</parent-name>
+            <remote-alias>vader_neg</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[advice!subreddits!combined!feat_963DF2946FA04A159C62622FB21948C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vader_pos</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[vader_pos]</local-name>
+            <parent-name>[advice_subreddits_combined_feat]</parent-name>
+            <remote-alias>vader_pos</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[advice!subreddits!combined!feat_963DF2946FA04A159C62622FB21948C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>masc_words</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[masc_words]</local-name>
+            <parent-name>[advice_subreddits_combined_feat]</parent-name>
+            <remote-alias>masc_words</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[advice!subreddits!combined!feat_963DF2946FA04A159C62622FB21948C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fem_words</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[fem_words]</local-name>
+            <parent-name>[advice_subreddits_combined_feat]</parent-name>
+            <remote-alias>fem_words</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[advice!subreddits!combined!feat_963DF2946FA04A159C62622FB21948C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cosine_similarity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[cosine_similarity]</local-name>
+            <parent-name>[advice_subreddits_combined_feat]</parent-name>
+            <remote-alias>cosine_similarity</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[advice!subreddits!combined!feat_963DF2946FA04A159C62622FB21948C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OP_demographics</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[OP_demographics]</local-name>
+            <parent-name>[advice_subreddits_combined_feat]</parent-name>
+            <remote-alias>OP_demographics</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[advice!subreddits!combined!feat_963DF2946FA04A159C62622FB21948C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OP_age</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[OP_age]</local-name>
+            <parent-name>[advice_subreddits_combined_feat]</parent-name>
+            <remote-alias>OP_age</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[advice!subreddits!combined!feat_963DF2946FA04A159C62622FB21948C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OP_gender</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[OP_gender]</local-name>
+            <parent-name>[advice_subreddits_combined_feat]</parent-name>
+            <remote-alias>OP_gender</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[advice!subreddits!combined!feat_963DF2946FA04A159C62622FB21948C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Posts' datatype='string' default-role='measure' default-type='quantitative' name='[Id (copy)_1344254172545691651]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[id]' />
+      </column>
+      <column caption='OP age' datatype='string' name='[OP_age]' role='dimension' type='nominal' />
+      <column caption='OP demographics' datatype='string' name='[OP_demographics]' role='dimension' type='nominal' />
+      <column caption='OP gender' datatype='string' name='[OP_gender]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;f&quot;' value='Female' />
+          <alias key='&quot;m&quot;' value='Male' />
+          <alias key='&quot;n&quot;' value='Non-binary' />
+          <alias key='&quot;unknown&quot;' value='Unknown' />
+        </aliases>
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='advice_subreddits_combined_feat' datatype='table' name='[__tableau_internal_object_id__].[advice!subreddits!combined!feat_963DF2946FA04A159C62622FB21948C3]' role='measure' type='quantitative' />
+      <column caption='Afinn Adjusted' datatype='real' name='[afinn_adjusted]' role='measure' type='quantitative' />
+      <column caption='Afinn Score' datatype='integer' name='[afinn_score]' role='measure' type='quantitative' />
+      <column caption='Cosine Similarity' datatype='real' name='[cosine_similarity]' role='measure' type='quantitative' />
+      <column caption='Created Utc' datatype='string' name='[created_utc]' role='dimension' type='nominal' />
+      <column caption='Fem Words' datatype='integer' name='[fem_words]' role='measure' type='quantitative' />
+      <column caption='Gilded' datatype='integer' name='[gilded]' role='measure' type='quantitative' />
+      <column caption='Id' datatype='string' name='[id]' role='dimension' type='nominal' />
+      <column caption='Kind' datatype='string' name='[kind]' role='dimension' type='nominal' />
+      <column caption='Link Flair Css Class' datatype='string' name='[link_flair_css_class]' role='dimension' type='nominal' />
+      <column caption='Masc Words' datatype='integer' name='[masc_words]' role='measure' type='quantitative' />
+      <column caption='Num Comments' datatype='integer' name='[num_comments]' role='measure' type='quantitative' />
+      <column caption='Score' datatype='integer' name='[score]' role='measure' type='quantitative' />
+      <column caption='Selftext' datatype='string' name='[selftext]' role='dimension' type='nominal' />
+      <column caption='Subreddit' datatype='string' name='[subreddit]' role='dimension' type='nominal' />
+      <column caption='Text' datatype='string' name='[text]' role='dimension' type='nominal' />
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <column caption='Upvote Ratio' datatype='real' name='[upvote_ratio]' role='measure' type='quantitative' />
+      <column caption='Vader Compound' datatype='real' name='[vader_compound]' role='measure' type='quantitative' />
+      <column caption='Vader Neg' datatype='real' name='[vader_neg]' role='measure' type='quantitative' />
+      <column caption='Vader Pos' datatype='real' name='[vader_pos]' role='measure' type='quantitative' />
+      <column caption='Word Count' datatype='integer' name='[word_count]' role='measure' type='quantitative' />
+      <column-instance column='[OP_gender]' derivation='None' name='[none:OP_gender:nk]' pivot='key' type='nominal' />
+      <column-instance column='[subreddit]' derivation='None' name='[none:subreddit:nk]' pivot='key' type='nominal' />
+      <group hidden='true' name='[Exclusions (OP gender,Subreddit)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:OP_gender:nk]' />
+          <groupfilter function='level-members' level='[none:subreddit:nk]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:OP_gender:nk]' type='palette'>
+            <map to='#1170aa'>
+              <bucket>&quot;m&quot;</bucket>
+            </map>
+            <map to='#57606c'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;n&quot;</bucket>
+            </map>
+            <map to='#a3acb9'>
+              <bucket>&quot;unknown&quot;</bucket>
+            </map>
+            <map to='#a3cce9'>
+              <bucket>&quot;f&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:subreddit:nk]' type='palette'>
+            <map to='#1170aa'>
+              <bucket>&quot;AmItheAsshole&quot;</bucket>
+            </map>
+            <map to='#5fa2ce'>
+              <bucket>&quot;relationships&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='advice_subreddits_combined_feat' id='advice!subreddits!combined!feat_963DF2946FA04A159C62622FB21948C3'>
+            <properties context=''>
+              <relation connection='excel-direct.0t5kfli1nnmhc91grjwfg1eswozs' name='advice_subreddits_combined_feat' table='[advice_subreddits_combined_feat$]' type='table'>
+                <columns gridOrigin='A1:Y1967:no:A1:Y1967:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='created_utc' ordinal='1' />
+                  <column datatype='integer' name='gilded' ordinal='2' />
+                  <column datatype='string' name='id' ordinal='3' />
+                  <column datatype='string' name='kind' ordinal='4' />
+                  <column datatype='string' name='link_flair_css_class' ordinal='5' />
+                  <column datatype='integer' name='num_comments' ordinal='6' />
+                  <column datatype='integer' name='score' ordinal='7' />
+                  <column datatype='string' name='selftext' ordinal='8' />
+                  <column datatype='string' name='subreddit' ordinal='9' />
+                  <column datatype='string' name='title' ordinal='10' />
+                  <column datatype='real' name='upvote_ratio' ordinal='11' />
+                  <column datatype='string' name='text' ordinal='12' />
+                  <column datatype='integer' name='afinn_score' ordinal='13' />
+                  <column datatype='integer' name='word_count' ordinal='14' />
+                  <column datatype='real' name='afinn_adjusted' ordinal='15' />
+                  <column datatype='real' name='vader_compound' ordinal='16' />
+                  <column datatype='real' name='vader_neg' ordinal='17' />
+                  <column datatype='real' name='vader_pos' ordinal='18' />
+                  <column datatype='integer' name='masc_words' ordinal='19' />
+                  <column datatype='integer' name='fem_words' ordinal='20' />
+                  <column datatype='real' name='cosine_similarity' ordinal='21' />
+                  <column datatype='string' name='OP_demographics' ordinal='22' />
+                  <column datatype='string' name='OP_age' ordinal='23' />
+                  <column datatype='string' name='OP_gender' ordinal='24' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Count of Posts by Age'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Count of Posts by Age</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='advice_subreddits_combined_feat (advice_subreddits_combined_features_demographics)' name='federated.1a9t09f097qtpd1h3jmwf18ltemw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1a9t09f097qtpd1h3jmwf18ltemw'>
+            <column caption='Posts' datatype='string' default-role='measure' default-type='quantitative' name='[Id (copy)_1344254172545691651]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[id]' />
+            </column>
+            <column caption='OP age' datatype='string' name='[OP_age]' role='dimension' type='nominal' />
+            <column-instance column='[Id (copy)_1344254172545691651]' derivation='Count' name='[cnt:Id (copy)_1344254172545691651:qk]' pivot='key' type='quantitative' />
+            <column caption='Id' datatype='string' name='[id]' role='dimension' type='nominal' />
+            <column-instance column='[OP_age]' derivation='None' name='[none:OP_age:nk]' pivot='key' type='nominal' />
+            <column-instance column='[subreddit]' derivation='None' name='[none:subreddit:nk]' pivot='key' type='nominal' />
+            <column caption='Subreddit' datatype='string' name='[subreddit]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1a9t09f097qtpd1h3jmwf18ltemw].[none:OP_age:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:OP_age:nk]' />
+              <groupfilter function='member' level='[none:OP_age:nk]' member='&quot;unknown&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1a9t09f097qtpd1h3jmwf18ltemw].[none:OP_age:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1a9t09f097qtpd1h3jmwf18ltemw].[none:subreddit:nk]' value='42' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1a9t09f097qtpd1h3jmwf18ltemw].[none:subreddit:nk]' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1a9t09f097qtpd1h3jmwf18ltemw].[none:subreddit:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1a9t09f097qtpd1h3jmwf18ltemw].[cnt:Id (copy)_1344254172545691651:qk]</rows>
+        <cols>([federated.1a9t09f097qtpd1h3jmwf18ltemw].[none:OP_age:nk] / [federated.1a9t09f097qtpd1h3jmwf18ltemw].[none:subreddit:nk])</cols>
+      </table>
+      <simple-id uuid='{20AEAB60-A19E-434D-849E-EE36560607BC}' />
+    </worksheet>
+    <worksheet name='Count of Posts by Gender'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Count of Posts by Gender</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='advice_subreddits_combined_feat (advice_subreddits_combined_features_demographics)' name='federated.1a9t09f097qtpd1h3jmwf18ltemw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1a9t09f097qtpd1h3jmwf18ltemw'>
+            <column caption='Posts' datatype='string' default-role='measure' default-type='quantitative' name='[Id (copy)_1344254172545691651]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[id]' />
+            </column>
+            <column caption='OP gender' datatype='string' name='[OP_gender]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;f&quot;' value='Female' />
+                <alias key='&quot;m&quot;' value='Male' />
+                <alias key='&quot;n&quot;' value='Non-binary' />
+                <alias key='&quot;unknown&quot;' value='Unknown' />
+              </aliases>
+            </column>
+            <column-instance column='[Id (copy)_1344254172545691651]' derivation='Count' name='[cnt:Id (copy)_1344254172545691651:qk]' pivot='key' type='quantitative' />
+            <column caption='Id' datatype='string' name='[id]' role='dimension' type='nominal' />
+            <column-instance column='[OP_gender]' derivation='None' name='[none:OP_gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[subreddit]' derivation='None' name='[none:subreddit:nk]' pivot='key' type='nominal' />
+            <column caption='Subreddit' datatype='string' name='[subreddit]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.1a9t09f097qtpd1h3jmwf18ltemw].[none:OP_gender:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;f&quot;</bucket>
+              <bucket>&quot;m&quot;</bucket>
+              <bucket>&quot;n&quot;</bucket>
+              <bucket>&quot;unknown&quot;</bucket>
+              <bucket>%null%</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.1a9t09f097qtpd1h3jmwf18ltemw].[none:OP_gender:nk]' value='19' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1a9t09f097qtpd1h3jmwf18ltemw].[none:OP_gender:nk]' value='79' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1a9t09f097qtpd1h3jmwf18ltemw].[none:OP_gender:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='316' />
+                <format attr='maxwidth' value='316' />
+                <format attr='minheight' value='424' />
+                <format attr='maxheight' value='424' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1a9t09f097qtpd1h3jmwf18ltemw].[cnt:Id (copy)_1344254172545691651:qk]</rows>
+        <cols>([federated.1a9t09f097qtpd1h3jmwf18ltemw].[none:subreddit:nk] / [federated.1a9t09f097qtpd1h3jmwf18ltemw].[none:OP_gender:nk])</cols>
+      </table>
+      <simple-id uuid='{D0516EC8-938F-44B7-8392-BA3761146F20}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Count of Posts by Gender'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1a9t09f097qtpd1h3jmwf18ltemw].[none:OP_gender:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1a9t09f097qtpd1h3jmwf18ltemw].[none:OP_gender:nk]</field>
+            <field>[federated.1a9t09f097qtpd1h3jmwf18ltemw].[none:subreddit:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{AF580555-DB42-4314-9DB6-449119962112}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Count of Posts by Age'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1a9t09f097qtpd1h3jmwf18ltemw].[none:subreddit:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1a9t09f097qtpd1h3jmwf18ltemw].[none:OP_age:nk]</field>
+            <field>[federated.1a9t09f097qtpd1h3jmwf18ltemw].[none:OP_gender:nk]</field>
+            <field>[federated.1a9t09f097qtpd1h3jmwf18ltemw].[none:subreddit:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{BC8A2020-01BD-47B8-9132-7DC462B50934}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Count of Posts by Age' width='192'>
+      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
+      789syy7DZQAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Count of Posts by Gender' width='192'>
+      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
+      JpMhnU7v28pwX/xfr9dbfuzxeCrq126za2U4fZOS/hV9I06nk8XFRUqlEidPniQSidDb28v8
+      /DyLi4t7tjLcpeE5Prg9W5NpHw/6+H/f6a7JtEX1VRSAzs5OOjs7y38fPXoU4KGKcXtN//QS
+      f7o6UZNpX+wMSgD2ERkGFbYmARC2JgEQtiYBELYmARC2JgEQtiYBELYmARC2JgEQtiYBELYm
+      ARC2JgEQtiYBELYmARC2JgEQtiYBELYmARC2JgEQtiYBELYmARC2VlEAstks/f39AExPT3P9
+      +nWy2Szj4+N8/vnnFIu1K4UhRDVUXBoxmUwCEI1G6erqYmRkhJWVFVpbW5menq5KJ4WolYrK
+      ojQ0NOB2u4EHha/cbjfZbBa/34/T6cQwDAzD2HOV4UyzllXKKqtKV0tSGe5hFQVgfn6e+/fv
+      EwwGKRaLXL9+nba2NqamplhdXaW7u3tPVoZT1dod+ihKZVXpakkqwz3itUoabmpq4sc//jGK
+      otDe3k6hUKCuro6WlhZKpRIul6uSyQtRcxUFQNO08hoeKO8O6bpe87WNENUgw6DC1iQAwtYk
+      AMLWJADC1iQAwtYkAMLWJADC1iQAwtYkAMLWJADC1iQAwtYkAMLWJADC1iQAwtYkAHuUZVlk
+      s9n/ucuqdnfP2Z0EYI9KpVK89957/P73vyeVSu12dw6sqgfAsiwikQiDg4MYm9yLKTbn8/nQ
+      NI1sNlu+0UhUX9UDUCgUWFxcJBQKEYlEqj152ygWi7z88sucOnWK+fn53e7OgVX1+xYNw8Dl
+      cuF2u8slU8TXt7a2xj/+8Q80TSMUCu12dw6sqgfA5XKxurpKLpejra2t2pO3jWAwyC9/+cvd
+      7saBV/UAaJrG008/TS6XIxAIVHvy+17RMMiWalMiREXBJ5U4vpYNAVhbW6ta0ShFUVhdXS3/
+      nclkWFlZKf+tFTL4rNoUkFIKJVZWvvpzNDkN/m+rpyZtdx/SN3zOL5tYSnBlarwmbdfpDv6r
+      9/985euZTBqf21GTtgFWV1fR9QdVQizL2jDPjWwen1WbWlAuQ2Nl5asPZ51m7ivnt2J9YZC5
+      VCrVbMw5kUhw+PDhmkx7K6VSadfKtBiGgaqqKIqy421bloVlWTUtBLaZ3ZrnpmmiKMq2vvMN
+      S0UtFxJN03A4arf22YyqqhvqF+0kTdO2PTOqbTcDsF4Zbjfm+dcJwJ45Eba2tkY8Ht92Xc3l
+      5eVtT3u7C79pmuXdtlwuRzb7v5vsUqnE2tratttc9+W1/+rqKpZlkcvlNt3afrH9TCbzWLum
+      iqI8tPCvtw1s+HwAKysrO3bWOZPJEI/HyWQy23p/KpXadrXx7W5xLctCe+WVV17Z1lQrlMlk
+      8Hq9X/n6p59+itvtxuPxMDU1RalUolQqMTY2RiaTIZFI4HK5GB0dxev1cvfuXY4cOcLw8DBu
+      t7sqZRhTqRRvvfUWvb293Lhxg6WlJQBmZmbweDxMT0/jdDoZHx8nGAw+1lr90qVL1NXVMTU1
+      RVNTEyMjI9TV1ZFKpZicnMTr9eJ0OllYWODmzZt4PB7S6TQul4toNEo8Hsfr9XL79m3q6urI
+      5/PEYjEsy8LlcrG2tkZdXd2mfRgYGKC1tZX+/n78fj+Tk5NYlsX09DSBQIBkMsns7Cyrq6v4
+      /X7u3r0LPDjHYxgG+XyeXC5HMplkcnKS+vr6R67pN5vnAwMDqKpKXV0diUSiPH/Hx8dJpVLM
+      zc3h9/sZGRlB0zRisRgul4vp6WlM09x0Wfo69kwAxsfHURSFQqHA3Nwc9+/fp1Ao0NzczMjI
+      CMVikWAwSCaTYWJiAl3XywvoxMQEHR0dFe9mFAoF8vk8xWKRfD6PpmkbFvxiscjo6CiaplEo
+      FGhsbPzabaytrZW3JMlkklAoxMjICIuLixw7doypqSlM06RUKuF2u7l37x6KouBwOJiZmcGy
+      LBwOB6ZpMjo6SiQSIRgMEo1GUVWVpaUlgsHgpn2YnZ2lpaWF2dlZcrkcPp+vvGDdv3+fhoYG
+      5ufnSafTlEolHA4HkUiEWCxGLpcjGo2ysrLC/Pw8nZ2dTE9Pc+TIkYfa2WyeR6NRCoUCmqZx
+      584dkskka2tr+P1+xsbGCAQC5criw8PDBAIB0uk0sViMqakpTp48WZXdyj2zC+TxeDh16hS6
+      rqMoCp2dnTgcDurr6wkEAuWZsL5PDQ/OlqqqyrFjx6rWj8OHD3Pnzp3yyaeJiQk8Hk/5so71
+      IPr9/sduo6Ojg0gkgmEYuN1uVFXF7XYTCAQwTRPLslAUBa/Xu2Ft3tjYWF5L6rqOpmkEg0E6
+      OjpobW3l+vXr2/ou1i+yy+VyaJpGY2MjmqZhGMaG5xwOR7mPDocDr9dbHilc31o3NDQ81u6Z
+      ruucOnWK+vp6TNMkHA7jdDoJBAIEAgHq6uqYnZ2lUCiUj03XB2lOnDjxtdv7Kv8NNaKZpRb0
+      u38AAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>

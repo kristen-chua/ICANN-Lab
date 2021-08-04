@@ -1,0 +1,1713 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20211.21.0511.0935                               -->
+<workbook original-version='18.1' source-build='2021.1.2 (20211.21.0511.0935)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='AITA Verb Analysis' inline='true' name='federated.1rms04s01m9jlh1gj02vk0de8uif' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='AITA Verb Analysis' name='textscan.1gpy2rz0l2zvvu1a4zzgz1pmetsu'>
+            <connection class='textscan' directory='/Users/kcchua/Documents/GitHub/ICANN-Lab' filename='AITA Verb Analysis.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1gpy2rz0l2zvvu1a4zzgz1pmetsu' name='AITA Verb Analysis.csv' table='[AITA Verb Analysis#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Row Labels' ordinal='0' />
+            <column datatype='integer' name='Count of action' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1gpy2rz0l2zvvu1a4zzgz1pmetsu' name='AITA Verb Analysis.csv' table='[AITA Verb Analysis#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Row Labels' ordinal='0' />
+            <column datatype='integer' name='Count of action' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[AITA Verb Analysis.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Row Labels</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Row Labels]</local-name>
+            <parent-name>[AITA Verb Analysis.csv]</parent-name>
+            <remote-alias>Row Labels</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AITA Verb Analysis.csv_7C0E657030EF4C1687DF061BE1541F7F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Count of action</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Count of action]</local-name>
+            <parent-name>[AITA Verb Analysis.csv]</parent-name>
+            <remote-alias>Count of action</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AITA Verb Analysis.csv_7C0E657030EF4C1687DF061BE1541F7F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Row Labels]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='AITA Verb Analysis.csv' datatype='table' name='[__tableau_internal_object_id__].[AITA Verb Analysis.csv_7C0E657030EF4C1687DF061BE1541F7F]' role='measure' type='quantitative' />
+      <column-instance column='[Row Labels]' derivation='None' name='[none:Row Labels:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Row Labels:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;“making&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;boss&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;constantly&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;disagreeing&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;gambling&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;keeping&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;not accepting&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;not delivering&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;not paying&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;not taking&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;pointing&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;reporting&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;singling&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;taking vacation&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;wanting&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;&apos;blocking&apos;&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;arguing&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;changing&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;cussing&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;expecting&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;hurting&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;losing&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;not changing&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;NOT INFORMING&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;not selling&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;ordering&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;refuse&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;sent&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;stop&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;travelling without&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;&apos;stealing&apos;&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;banning&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;closing&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;deliberately&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;for&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;insisting&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;muting&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;not cooking&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;not letting&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;not splitting&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;paying&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;reminding&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;shopping&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;suing&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;uninviting&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;accidentally&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;buying&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Convincing&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;donating&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;giving&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;lashing&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;not apologizing&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;not funding&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Not Punishing&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;not trying&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;prioritizing&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;revealing&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;standing&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;telling&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;won&apos;t let&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;“publicizing”&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;bought&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;contacting&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;doing&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;gaslighting&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;kicking&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;not accommodating&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;not doing&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;not personally&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;not telling&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;potentially&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;requesting&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;snapping&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;talking&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;wearing&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;‘being&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;being&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;clovering&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;demanding&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;forcing&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;insulting&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;my&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;not correcting&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;not look&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;not sticking&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;persuading&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;removing&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;shouting&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;supporting&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;using&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;allowing&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;CCing&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;crying&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;enforcing&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;holding&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;locked&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;not buying&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;not honoring&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;not returning&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;only&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;recording&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;selling&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;still&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;took&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;&apos;going&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;asked&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;charging&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;decide&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;exposing&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;ignoring&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;lying&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;not cleaning&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;not inviting&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;not serving&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;overreacting&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;refused&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;set&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;storming&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;trying&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;adopting&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;cancelling&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;cried&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;emasculating&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;hiding&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;letting&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;not being chatty or giggly&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;not having&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;not renewing&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;not wanting&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;raising&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;scattering&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;stealing&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;tipping&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;“abandoning”&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;blowing&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;confronting&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;directly&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;freaking&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;invading my friend&apos;s privacy?&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;naming&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;not covering&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;not making&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;not supporting&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;planning&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;report&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;showing&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;take&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;waking&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;accused&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Called&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;cooking&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;dressing&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;going&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;laughing&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;not asking&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;not getting&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;not pushing&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;not using&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;publicly&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;rudely&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;start&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;thinking&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;writing&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;accusing&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;calling&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;correcting&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;drinking&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;having&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;leaving&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;not attending&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;not giving&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;not quitting&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;not waiting&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;punishing&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;ruining&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;starting a fight&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;threatening&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;yelling&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;advising&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;causing&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;crocheting&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;embarrassing&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;hiring&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;liking&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;not bothering&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;not helping&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;not responding&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;offering&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;ratting&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;screaming&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;sternly&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;told&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;announcing&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;celebrating&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;cursing&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;evicting&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;holding a grudge&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;locking&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;not calling&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;not including&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;not scoring&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;openly&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;referring&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;sending&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;stole&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;towing&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;“showing&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;bringing&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;continuing&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;don&apos;t&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;gave&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;kicking off&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;not agreeing&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;not eating&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;not picking&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;not tipping&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Pouring&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;resenting&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;spending&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;teaching&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;withdrawing&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;“lying”&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;booting&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;considering&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;disabling&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;full-on&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;inviting&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;not&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;not deleting&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;not offering&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;not switching&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;playing&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;reported&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;siding&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;taking&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;walking&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;&apos;holding&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;asking&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;choose&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;declining&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;fighting&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;implicitly&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;making&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;not co-signing&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;not learning&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;not sharing&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;overruling&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;refusing&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;setting&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;sued&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;trying to put a woman in the kitchen&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Accusing my Parents of Being a Bad Parents to my Deaf Sister?&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;canceling&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;countermand&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;eating&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;helping&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;left&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;not being&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;not going&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;not rehoming&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;not waking&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Putting&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;saying&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;staying&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;throwing&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;accept&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;building&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;contradicting&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;don’t want&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;getting&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;kidnapping&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;not allowing&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;not explaining&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;not pronouncing&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Not Tipping?&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;pre&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Returning&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;spoiling&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;tell&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;witholding&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;&apos;humiliating&apos;&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;backing&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;choosing&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;defending&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;flipping&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;implying my coworker&apos;s baby is ugly&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;moving&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;not considering&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;not leaving&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;not siding&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;parking&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;rejecting&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;shaming&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;suggesting&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;turning&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='AITA Verb Analysis.csv' id='AITA Verb Analysis.csv_7C0E657030EF4C1687DF061BE1541F7F'>
+            <properties context=''>
+              <relation connection='textscan.1gpy2rz0l2zvvu1a4zzgz1pmetsu' name='AITA Verb Analysis.csv' table='[AITA Verb Analysis#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Row Labels' ordinal='0' />
+                  <column datatype='integer' name='Count of action' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='AITA for action'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run><![CDATA[<AITA for (action) ... Action Analysis>
+]]></run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='AITA Verb Analysis' name='federated.1rms04s01m9jlh1gj02vk0de8uif' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rms04s01m9jlh1gj02vk0de8uif'>
+            <column datatype='integer' name='[Count of action]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Row Labels]' role='dimension' type='nominal' />
+            <column-instance column='[Row Labels]' derivation='None' name='[none:Row Labels:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Count of action]' derivation='Sum' name='[sum:Count of action:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1rms04s01m9jlh1gj02vk0de8uif].[none:Row Labels:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter from='&quot;&apos;blocking&apos;&quot;' function='range' level='[none:Row Labels:nk]' to='&quot;naming&quot;' />
+              <groupfilter from='&quot;offering&quot;' function='range' level='[none:Row Labels:nk]' to='&quot;yelling&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1rms04s01m9jlh1gj02vk0de8uif].[none:Row Labels:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1rms04s01m9jlh1gj02vk0de8uif].[sum:Count of action:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.1rms04s01m9jlh1gj02vk0de8uif].[sum:Count of action:qk]' />
+              <color column='[federated.1rms04s01m9jlh1gj02vk0de8uif].[sum:Count of action:qk]' />
+              <text column='[federated.1rms04s01m9jlh1gj02vk0de8uif].[none:Row Labels:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{B4F6B0B3-C8FF-4E04-9954-F5DAC527D96C}' />
+    </worksheet>
+    <worksheet name='AITA for all actions'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run><![CDATA[<AITA for (All)... Action Analysis>
+]]></run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='AITA Verb Analysis' name='federated.1rms04s01m9jlh1gj02vk0de8uif' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rms04s01m9jlh1gj02vk0de8uif'>
+            <column datatype='integer' name='[Count of action]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Row Labels]' role='dimension' type='nominal' />
+            <column-instance column='[Row Labels]' derivation='None' name='[none:Row Labels:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Count of action]' derivation='Sum' name='[sum:Count of action:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1rms04s01m9jlh1gj02vk0de8uif].[none:Row Labels:nk]'>
+            <groupfilter from='&quot;&apos;blocking&apos;&quot;' function='range' level='[none:Row Labels:nk]' to='&quot;yelling&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1rms04s01m9jlh1gj02vk0de8uif].[none:Row Labels:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1rms04s01m9jlh1gj02vk0de8uif].[sum:Count of action:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.1rms04s01m9jlh1gj02vk0de8uif].[sum:Count of action:qk]' />
+              <color column='[federated.1rms04s01m9jlh1gj02vk0de8uif].[sum:Count of action:qk]' />
+              <text column='[federated.1rms04s01m9jlh1gj02vk0de8uif].[none:Row Labels:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{B0D11E1C-F786-47B4-8E3B-994C55B88A68}' />
+    </worksheet>
+    <worksheet name='AITA for not '>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run><![CDATA[<AITA for (not ___) ... Action Analysis>
+]]></run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='AITA Verb Analysis' name='federated.1rms04s01m9jlh1gj02vk0de8uif' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rms04s01m9jlh1gj02vk0de8uif'>
+            <column datatype='integer' name='[Count of action]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Row Labels]' role='dimension' type='nominal' />
+            <column-instance column='[Row Labels]' derivation='None' name='[none:Row Labels:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Count of action]' derivation='Sum' name='[sum:Count of action:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1rms04s01m9jlh1gj02vk0de8uif].[none:Row Labels:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not accepting&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not accommodating&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not agreeing&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not allowing&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not apologizing&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not asking&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not attending&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not being&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not being chatty or giggly&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not bothering&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not buying&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not calling&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not changing&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not cleaning&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not co-signing&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not considering&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not cooking&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not correcting&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not covering&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not deleting&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not delivering&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not doing&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not eating&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not explaining&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not funding&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not getting&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not giving&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not going&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not having&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not helping&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not honoring&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not including&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;NOT INFORMING&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not inviting&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not learning&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not leaving&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not letting&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not look&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not making&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not offering&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not paying&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not personally&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not picking&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not pronouncing&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;Not Punishing&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not pushing&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not quitting&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not rehoming&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not renewing&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not responding&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not returning&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not scoring&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not selling&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not serving&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not sharing&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not siding&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not splitting&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not sticking&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not supporting&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not switching&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not taking&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not telling&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not tipping&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;Not Tipping?&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not trying&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not using&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not waiting&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not waking&quot;' />
+              <groupfilter function='member' level='[none:Row Labels:nk]' member='&quot;not wanting&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1rms04s01m9jlh1gj02vk0de8uif].[none:Row Labels:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1rms04s01m9jlh1gj02vk0de8uif].[sum:Count of action:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.1rms04s01m9jlh1gj02vk0de8uif].[sum:Count of action:qk]' />
+              <color column='[federated.1rms04s01m9jlh1gj02vk0de8uif].[sum:Count of action:qk]' />
+              <text column='[federated.1rms04s01m9jlh1gj02vk0de8uif].[none:Row Labels:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{35FFCACD-70DE-4943-868E-C3C8AA78ADF1}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='AITA for all actions'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1rms04s01m9jlh1gj02vk0de8uif].[none:Row Labels:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1rms04s01m9jlh1gj02vk0de8uif].[sum:Count of action:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1rms04s01m9jlh1gj02vk0de8uif].[:Measure Names]</field>
+            <field>[federated.1rms04s01m9jlh1gj02vk0de8uif].[sum:Count of action:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{7299B760-B945-44E2-A96A-FA9E0801A852}' />
+    </window>
+    <window class='worksheet' name='AITA for not '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1rms04s01m9jlh1gj02vk0de8uif].[sum:Count of action:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1rms04s01m9jlh1gj02vk0de8uif].[:Measure Names]</field>
+            <field>[federated.1rms04s01m9jlh1gj02vk0de8uif].[sum:Count of action:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{63E7E0AD-3F9F-4830-B893-411ECD4D763A}' />
+    </window>
+    <window class='worksheet' maximized='true' name='AITA for action'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1rms04s01m9jlh1gj02vk0de8uif].[sum:Count of action:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1rms04s01m9jlh1gj02vk0de8uif].[:Measure Names]</field>
+            <field>[federated.1rms04s01m9jlh1gj02vk0de8uif].[sum:Count of action:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{95D404C8-73DC-4884-96FD-B163FCBB84A9}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='AITA for action' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAXxElEQVR4nO3dWW9cZ57f8e9Zat+5b8VVIqmF2iVLttqyW263u6c9kyCZCQbB5C4BAuQm
+      F3kPeRe5GCBAkCCDyUx3u3tgu+22LFu7rIU7KXETxZ2sveosuaBFkbIkylJt9Pl/bkRWHZ7z
+      L+j86jnLc55HsW3bRgiHUitdgBCVJAEQjiYBEI6mP/uCbdvIWUFlKEqlK3CeHwTAsmyO/d1/
+      r0Qtjvdf/u59XPFApct4Lb2xGI/SG2XdZqM/yHouS9Y0XnsdcggkHE0CIBztRwdA11QUBTRN
+      slNupmFgWRZGocBeuX2zeU5pv/D3YjIKhR9sw7bt577+xK57cX9nI4oCqqKgKHC8L04s5OdI
+      TwtdLbWbK9l29qaqciZXDLZtY5kmtmVhmSaWZTE9MsLawgIj167zaGJyxzK2bWOaZtUEw/q+
+      7vWlZZLr61s73+LMLPlcbrPu718rVt13Ln+DbdusLiySTiS3vizuX72GbdsszT0il8ls1Wbb
+      9g9PgreLhfz8+u1DKMC5gS7S2QKzi2toqorHrdPeGKOxJkRzXYRUOoeqqYT8Hu6OP2Lwwfwb
+      fyAnW5mf585Xl+g+fJjFmRlW5ufpOHgA0zDJZ7MsTE+zPDdHYnUV3e1GURRS6+u09/fTfWSg
+      orWbpsknf/8/yabTHH/3PJlUGq/fz+riAm6Pl9WlJQavXufg6ZM8ejhFIZenZ+AQXQcPvNF2
+      M8kUX//299S3tRKOxfjiH/6R9r5esqk0l3/3Cf5wmJbuTi7/9hN0t5uDZ06/vAVYTaS5Oz5H
+      Ip3DrevkC8aOS3Vul45l2Xx6dRgLG49L58r9h3I5rwjWFhY5dO4sNc1NZJLJzW9Ny9p638jn
+      ME2TMx/9EkWBQi7Hobff3rFMpaQTCRraWmnp6sQ0DKL1dSzOzlLI5Te/8QsGh8++RS6TxbYs
+      Dp09g2m8/pWcJybvD6JqGpqmsba4RNfBA/SfPM7E3Xsoqoqu61imRffhQ7T2dLMwPf3yFgAg
+      mzfwelwsrCZYXEuytJYkVzBYXk+RzhZIZ/MUDJOFlQS6lub80R5uDk+/8YdxusaOdu59fZm6
+      1lZcHg/R+npCsRgen49oQz2mYaDpLhRVpaa5Gcs0uXvpEq379lW6dIKRCPlcjqnhETr7+/CH
+      Q+guF+19vWSSSTRdR3e5cHs9gM3tP1+i9/jRN97u6Ys/J5/LoWoaTR3t3Ln8DYqqcvqDn5PL
+      ZFBUDa/fR6S2BsuyCIS7UJ7tDGea1mvfBzh9sINIwMufb4+Ty795op3m2fsAzx4XKy9oWm3b
+      ZuT6dVLr6xx46y18wWBJ63ye7fcBbNvm0j//jkhtLYfPvYWiKFufZftnsG2b7y59TS6T5fiF
+      n+Fyu3/UNne7D/C8bW63PD+/ewvwY1y9/7CYq3O8F/3HPW+5vlOnSlzNq1MUhfMf/8UPXnve
+      ckfPv1PSOl6mtqlJ7gMIZ5MACEeTAAhHkwAIR5MACEeTAAhHkwAIR5MACEeTAAhHkwAIR5MA
+      CEeTAAhHkwAIR5MACEeTAAhHkwAIR5MACEeTAAhHkwAIR5MACEeTAAhHkwAIR5MACEeTAAhH
+      K+rAWMK5VEWhKxwt2foVRQEbbJ6Olhdye4i4PRQsc9farBeMPi0BqCJeXaM5FKp0Ga8l4vbw
+      ILVcsvXXef1kzcKOYRCX88lX+tvWQJjZVOK570kAqkjBtFhKZypdxmuJuD2VLuG1SACqiGnb
+      bzThWyXtdhhSreQkWJRFPpfbmhGmWmaxAQnAnldNO9MTpmFw98o1Crk86e8n97h96TIA+WyO
+      6bEJCoUCmVQK27bJpFLkMpmKfBY5BNpjHk1O0tzVtfXv/OQkzd3dlS5rh+T6Bje+/Iqa+nqm
+      xsZZmntErKGesTv3MA2DVCKBZZrc+PIrTr3/LmN37pHLZvnob/+m7LVKAKrUxvIyNz79DNu2
+      aYjHmZsYJ97Xz63PP+fkBxe5+dnnnPv4Y9aXl5gaGiafzdLc3cXC1BSZVIqTFz8g2lBfkdoj
+      tTV0HegnEA6x8vgxqUSSSG0NN768xEd/+9cM3bxFZ38vC7NzLMzM0X/iGKO371SkVglAlVqa
+      m6Pv9GnmxsaYGhqiIR7HMgz2HTvK/hMnWF9aJt7Xy+M/PkRzuTh78SJX/vAJwWiU5u5uDKNQ
+      0fq9Pi9L8/P4AgGCkQjNHe0cefssjx48pL6lGYD6lmZqGuq5880VVpdKdwn1ZSQAVaohHufG
+      p5+xsbxMz9GjbCwvUdPcTDqRYP7BAzRdY3ZsnGA0CgooqkJ9aysr84+ZHR3jrV//qqL1n3r/
+      AgDd38/8+GS2lkhNbGuZrgN9rC4uYZomJy+cL3+RSACqlqKoeHw++k6dZN/x49i2jaIoNHa0
+      g23T2NEBto2yr2frb3qOHiWduERzdxeR2toKVv/q0zvF6uu48Jd/sfuCJSIBqFKBSHjHt/iO
+      HerJz8/sZJquc+y9C+Uo7ydDLoMKR5MACEeTAAhHkwAIR5MACEeTAAhHkwAIR5MACEeTG2Fi
+      z3Cr2guf7X0ZXdFwq9rz33vTooQol5Dbg8f68bts2swT8Xi3fq/z+lnOpgEJgCgSVVGIByIl
+      W3/Q7WYmtUauCI+MejSN5VwKkACIIrFsm5nUesnWX2v6S7JeOQkWjiYBEI4mARAlcePPlxi8
+      fhPLsrZey2WzmKZJNpPBNAwePZyqYIWb5BxAlMTqwhKR/l6ufvYFh8+cYmVhkTvfXMEfCpLa
+      SNB1oA9fMMDE/SFmJibZf+QwGyurzE9Nc+Ld84SipTuh3k4CIEriwdAwmVSSpvZ2kusbPBwZ
+      pa2ni5auTh4OjxDf183tS9+i6RoHTx5ncnCY9ZUVOnr3k1hbK1sA5BBIlMS+I4f5zX/49zS2
+      tTA5OMTS/GM8Xh8z4xP4g0EW5+YB0F0u3F4PiqqQTiQZu3OvrHVKCyBK4q2L7wPQ2t2Fx+fj
+      wKkTBEIh1paXidXVkk2naenqQFEUXC43A2fPYJkW0+MTxOrrylanBECUhNfvA0BVVRpaW7Ze
+      r2tqBCAQDu9Y3qN5GTh3hqPvnMXj9VIuEgBRNXz+0tzsehkJgNgzmnyhooxCrStPO8ZJAMSe
+      MZ9JFKUvUEvg6eGXXAUSjiYBEI4mh0DCcUIuD4p/8zBIAlBF/C4XXbGaSpfxWhr8fjY2UpUu
+      45UkCjkepTcACUBVyRgFRtdWK13Ga3nFsXCrjgRAFIWKQlsZnggrNgmAKAoLeSJMlFhydZVc
+      ZnMe4Y3lysyo8lMjLUCVymez3Pv6Mi093dg2LM3O4AsGidTVsW5ZZFMpctkssyOjdBw6SD6T
+      YW58nL7Tp/Hv0dnmK0FagCplmSYuj5sbn37G0JUr+IIhTMPk6h/+iKpqPJ6aYuK7O3QcPMj4
+      rduM375NfTzO8txcpUvfIZ/LYRoG+Wz2hctUcqpXaQGq1ML0NEbBwOPz0X/6NLe//JK23l7c
+      Xi+ZVBIAt8dDIBJGURRy6QxLs7PUNjdXuPJNKwuLuD0eJoeGaYq3MTvxgL7jR8ik0gQjEcDG
+      tmxQYGZsgo6+/STXN9DdLnx+P6tLywTD4a1epSB9gRylqasLo1CgpbsbyzLpPXWSxvZ29p84
+      TnJtjf5Tp0BR0N1uek+eYPy7O8yMjBDv66906QBMj40zeX+YzgN92JaFaRp89dtP8IdCqJrG
+      xuoqmqbhDwZRFAVFVXk4MopRKBCtrd1qFc5cfG9rnaXoCyQBqFJuj4fugYHnvlfT2Ljj92As
+      xr5jR+k9eQJfMFiO8l4qm04zcX+IVCKx43WXx8OBE8eYHp/g7rdX6T9xDADTMLEsiwMnjjF+
+      b5DE2hoDZ88wOThckvrkTvBPjKIom9OlVgmX202svo7axgYaWprxhYI0trXi9nq5d+0Gpy78
+      jIa2VtKJJIFwiHQySTgaw+P10NLZsXnu8+dLhGOx3Tf2GuROsCgpTdd5769+s+O1UCRCW0/3
+      1u++YOC5fxuKRZkaHaOmoYEDJ46WtE6QAIgq1L5/H+3795VlW3IZVDiaBEA4mgRAOJoEQDia
+      BEA4mlwFEo4jN8LEnlSsvkAZw2BOboSJYirXE2HSF0hUJXkiTIg9SAIgHE0CIEpifnrmhe/l
+      slkSa6U7XPox5BxAlMSf/uGf6D02wP6jA9y+9A29RwcwCgXCsRjJ9XU2Vla5v7RMY1sroViU
+      oRu32H/k8I65BMpBAiBKIlpfRzqRpJDNoWoqVz//An8wiC8QoK2ni8Ebtzh85hRTo2MU8nlO
+      vX+B0dt3yh4AOQQSJRGKRnC53YzevUc4FsPlclNTX8/q4iI+vx9V0wiEQ2i6jmmaTI2MYplv
+      fo3/VbhVnYDuJqC7pQUQpXHk3BkURUHVNOanZzh54Tz+YJD4/h5C0Sjnf/1LAuEQgXCYqdEx
+      hm99x8DZM2WpTQE0ZfO7XwIgSiK07RHN7gNPH9R/8iTYk4nw3B4P+wYOEd/XU7apUXOWwUZh
+      c5gWCYCoOI/X+0oT48mwKMLRZIokIYpMAiAcTQ6BqohPd9EVLc1YOKVW7/OzXkhWuowfTQJQ
+      RTJGgbE9OkOMukdniJFDIOFo0gIIx5FHIn8CTMNA06vnv0/ZQ3OEydige4BpGMyMjlLX2sr6
+      0hKqqhKIRAhGIqQ2NliYnqYhHmdpbo6GeByAR5OTtPb04A08f9zNUrL36BNhEoAq9WhykvkH
+      DwnX1JJJJBm6do32vl7q29qYGR0DBRanZ2joaGfk+g3SiY3v3xtl37FjlS5/z5CT4CpV19pK
+      MBpl5MYNZkZHUVWFtt5ervz+D8R792NbFi6vl5aeHizTJJ/N4fH5sSyr0qXvKdICVKl8Jks6
+      kaDz0EEWpqYI19Rs9qcPB2lobwdFQVVVdF0n3tfLxsoK9y5fpv/0qUqXDkAhn8fldr/w/Scz
+      wCg/YobtoO7BrWq7L7gLddv3vgSgSoVrazj94S8AaGxvByCxusrJixdRFGXrNdhsLSzT5NC5
+      s7T09FSk3mfd/OoyJy+cxzJMdLeLQj6/ddKuaRqLs3MEwiHcXi+KoqDpOoV8HlXV0F0l3i23
+      ZU4CsIeEXjBjiqIoNHZ0lLmal8tns/zL//6/pBNJ3v7oF4x+d5fURoJgOMTRd87y1e//yOEz
+      p/ju62/xBQP0nzjGg+ERzILBh//u3zx3nUkjV5TOcCG3Z+tnOQcQJWHbNvNT00RqYiw9mieb
+      SpFOJGjqiPPF//sd7fu6MQ2Tw2dPE6mr5fH0DKffexePf/du0cUkLYAoiYbWFrx+P9lUikht
+      DYtz8zS0thDv6eHB4AjNnZstlqIoKIpCfUszN7/6msRqca71vyoJgCiJvmNHdpzotnV3bb13
+      8d/+qx+c/C7MzKIoCifePV/y2uROsCiL7Tv5bld7GtpaaWhrLXVJwM47wXIOIBxNAiAcTQIg
+      HE0CIBxNAiAcTa4CiT2jxuMnX4RxgZ6MCgcSALGHJAvF6Qrh1Z7u9hIAURQKCq3bBpwqtqDL
+      w2x6rSgtQEB30+STG2GiiGxs5tOJkq2/1lu8p9xSRp7HGXkkUhSZXdJ1F2/t9ra1yVUg4WgS
+      AOFoEgDhaD84B1BUhf/6357/RI4ord66EGMby5Uuw1GeexJ8aWah3HUIIOpzVboEx5FDIOFo
+      EgDhaD/6PkAuscHjwTu0nXgL9ZmxKdemHxKNV9foBOKno1hzhMXc/q2RUXYNwPTVr/GGoyQW
+      HuENR1mfm8YTDLP6cIJAQxOFVJKVyTGCDU0oms7G/BxLY0MEaurwhCMsj49Q272faLzzjQv/
+      qfO5dJrCe3SCDL+fjY3STpBRrDnCUHj1wXGXJ8foeuc9Nm7NsjY9ReOBw9R272f+7i1c/gDJ
+      xcckFx8TiXey+mAcX7SG+t6DLI0Okng8T/zUWRZHBiUAryBnGkwnM5Uu47W4tL05Q8au5wDR
+      tg68kRiKqlLfewBFVVE0lUI2w8LwPRRFJdrexdzNq5t/oIDu9qAoKoqiMHvrKpZRhNQKUQK7
+      tgDx02+j6jr9v/orFEVB93hRNI2ud97HyGVx+QPkU0ka+g+havrmOC+qSvz026xMjrI+N0Ow
+      obEcn0WIH23XAGiuzWvTnmBo5x96vejfT27se87EbpqqUtO9n2h7Fy6vrxi1OkohnwfbxuV5
+      OoyfbdvYto2qysW7Yilpb1BNd6HpcnPndSzOzDI9OkbfiWP4gkHmJiaJ9+7n4dAwtc1NrC8t
+      09LdRTqRZG1xkZburpeOxlxqm88DlHCGGJeb6SLNELOddIeuUjabg0ld+ZdPcXk8hKJRNlZX
+      yaUzPBgcoqWrkwf3B5kaHiFSV4cvGCzbwFLPr9dmNrVRsvXXekszQ4y0pVVKUaCpo51QNMra
+      4iJur4doXR2WZRKMhGnu7MQyTQzDwO31gl3K3vg/XRKAKhWO1TA3MUlzVyfnP/4NidU1ApEw
+      HX19tPf14QsEqG9rozEeZ/jGDTx+Oc96VW5VJ6C7CehuOQSqVsFohLO/+uXW7/WtLT9YxuP3
+      sba4yJlffECktrac5e1pCk9HhpAA7HHdhw9VuoQ9J2cZbBSygARA7CHF6gukK0/nGZMAiD2j
+      WH2BWrYN3yInwcLRJADC0SQAwtEkAMLRJADC0eQqkHAct6oT1Dd72UoAhOMobPa1AgmAKJK9
+      1B06ZxkkCjlAAiCKRLpDC7EHSQtQRXRFxef2VrqM1+LTXZAr7TaCuge3qu2+4C7Ubd/70gKI
+      skqub5DLZCnk8ti2jVEolL+IbSO4SAtQRQzbIpXLVrqM11Ljfdpy5TJZwCaxtk6ktoZcJsPs
+      5EMaWlu4e+U6LZ3t6C6daF0dS4/mCceirCwssm/gEI+nZ8hls3Ts34eq7fy2TxrFmSQv5H46
+      0IC0AKLoTNPk+heX+Mf/8ffcu3qd1aVl8rkcX/zT77eWufPtNWzL4vHMHN9++idSiQR3vrnK
+      xOAw06MT5LLl+SKQAIii8wcDPBwd4+SFn/HdN1fJZbKsL6+wfRYxo1DA4/NiWxbRulqa4m2k
+      E0l0Xf9++Jfy1CqHQHvQyK3bdB86iKKqLExN09zVWemSfuD0++/S3BHH6/fR0tnB45lZ9g8c
+      IlZfTyAc4tyHF1lfWaX7YD8A4ViUvmMD3L16nUdT0+h66XbNkMuD4t98JkCx7Z1Zs2yb//jP
+      X5Vs4+LFPu5rJcfm2KBLc4+4/vmfyGez+IJBDp99i5GbtwhFo9i2TU1TI26vh/XlFZZm58im
+      Uhw5/w7DN25iFAqc+/VH+ALFm1p0N92RKMu5N5sm1SgUmLg/RLSuloZnnoGu9frJmIWiPRDz
+      yoPjisrI57IcOHWSR5MPaOnuYnF2FpfHzfzUFIFwmAeDQ/zr//yfmBoewe310n/qJJP3B6lr
+      acY0TEzjzR8dLDfd5aL36EB5t1nWrYlXpukusDdHftBdLpLr65u/e73UNDZQ19LM1PAIHp8P
+      RVHRNI1YfR0Ph4ZJrq/TffhgpT/CniABqFKN8TYAWrq7AGju6sQ0DLRnjo07+vu2fg5Go6ws
+      LBCuqSnr4c9eJgHYQ57d+Z/l8rg588FFUBQUZW+O119uEoCfEEVRnvbzFa9EAiCKovTdoT2k
+      jBz5IowL9GRUOJAAiCKxsZlLv9ll0Jep9fgxbLMol0G92tPdXgIg9oy8ZRalBbC33ZGWAAjH
+      2X4nWPoCiZLYWH21xxfz33eLLqdEIcdceoO59IYEQJTGH/7X/+HhyCjZdJo7314jub7O/PQM
+      g9dvkctkGbl9h43VNabHxllfWWX41nesLi6R2khw98o1khule7xyOzkEEiXh8fm4f+0mLreH
+      Qj7P5T9+Ri6bpefQAe5cucra0grLjxdQVZXl+ceEa2Lcvvwt+WyOjt59zIxP0n/8aMnrlBZA
+      lERNfR2x+jrG7t1H0zRM0yBaW0NDawuFXJ66ps2pc23bRtU0Wjo70HWdXCaLqmlYllWWOqUF
+      ECWhKArhmhjN7XGGbt5m/8BhAuEQwXCI7oP96C4XRqGwNa+01+9j38Ah1paWufr5F5z9xc/L
+      UqcEQJTEO7/6cOvncx9e3PFe4wtms2z6vv/T27/8gHhPd+mK20YCIKrKkxCUi5wDCEd7bgtw
+      Pt5Y7joE0B4OYeDZfcEqVOf143OV7vs0qHvIW56izBEWc/u3Rkb5/6M4qpqRfKQzAAAAAElF
+      TkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='AITA for all actions' width='192'>
+      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
+      AElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='AITA for not ' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
